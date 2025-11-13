@@ -1,0 +1,41 @@
+# --- Dependencias ---
+# Ignora *todas* las carpetas node_modules en cualquier subdirectorio
+node_modules/
+
+# --- Archivos de Log ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# --- Artefactos de Build ---
+# Ignora las carpetas de build de Next.js
+.next/
+out/
+
+# Ignora las carpetas de build de TypeScript/Express
+dist/
+build/
+
+# --- Variables de Entorno Locales ---
+# Ignora todos los archivos .env locales que contienen secretos
+.env.local
+.env.*.local
+.env
+
+# --- Archivos del Sistema Operativo ---
+.DS_Store
+Thumbs.db
+
+# --- Archivos de IDE / Editor ---
+.vscode/
+.idea/
+
+# --- Archivos autogenerados de TypeScript ---
+*.tsbuildinfo
+next-env.d.ts
+
+# --- Otros ---
+.pnp
+.pnp.*
+*.pem
