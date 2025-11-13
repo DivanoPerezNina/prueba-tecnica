@@ -1,0 +1,24 @@
+{
+  "name": "todo-api-serverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.930.0",
+    "@aws-sdk/lib-dynamodb": "^3.930.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.158",
+    "@types/node": "^24.10.1",
+    "esbuild": "^0.27.0",
+    "typescript": "^5.9.3"
+  }
+}
